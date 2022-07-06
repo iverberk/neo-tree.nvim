@@ -210,7 +210,7 @@ M.win_enter_event = function()
       if position ~= "current" then
         -- close_if_last_window just doesn't make sense for a split style
         log.trace("last window, closing")
-        vim.cmd("q!")
+        vim.cmd("qa!")
         return
       end
     end
